@@ -14,7 +14,6 @@
     #     dest: /home/avi/Desktop/spe/finance-tracker/docker-compose.yml
 
     - name: Start Docker Compose services
-      # become: true
       command: docker-compose up -d
       args:
-        chdir: /home/harsh2835/Downloads/FinMate-DevOps-main/
+        chdir: "{{ ansible_env.WORKSPACE }}"
