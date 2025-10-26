@@ -4,8 +4,7 @@
 
   tasks:
     - name: Install Docker Compose
-      # become: true
-      apt:
+      dnf:
         name: docker-compose
         state: present
     
@@ -18,4 +17,4 @@
       # become: true
       command: docker-compose up -d
       args:
-        chdir: /home/avi/Desktop/spe/finance-tracker/
+        chdir: /home/harsh2835/Downloads/FinMate-DevOps-main/

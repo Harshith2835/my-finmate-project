@@ -1,14 +1,14 @@
 version: '3.5'
 services:
   client:
-    image: avantikaaa/finance-tracker-client
+    image: harsh2835/finance-tracker-client
     ports:
       - "3000:3000"
     depends_on:
       - server
 
   server:
-    image: avantikaaa/finance-tracker-server
+    image: harsh2835/finance-tracker-server
     ports:
       - "4000:4000"
     depends_on:
@@ -19,4 +19,4 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - /home/avi/Desktop/spe/finance-tracker/data/db:/data/db:rw
+      - /home/harsh2835/Downloads/FinMate-DevOps-main/data/db:/data/db
